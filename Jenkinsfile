@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'cp /home/ec2-user/.jenkins/workspace/my-first-pipeline/target/MyApp.war /home/ec2-user/apache-tomcat-9.0.46/webapps'
+                sh 'cp /home/ec2-user/.jenkins/workspace/my-first-declarative-pipeline/target/MyApp.war /home/ec2-user/apache-tomcat-9.0.46/webapps'
             }
         }
     }
